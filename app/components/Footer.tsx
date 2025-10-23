@@ -121,7 +121,7 @@ export default function Footer() {
 
   return (
     <footer
-      className={`relative text-center py-10 transition-all duration-500 ${
+      className={`relative text-center py-6 xs:py-8 sm:py-10 transition-all duration-500 ${
         isDark ? "bg-[#0f0f0f]" : "bg-[#f3efe2]"
       }`}
       style={{
@@ -132,10 +132,10 @@ export default function Footer() {
         filter: filterBrightness,
       }}
     >
-      <div className="grid grid-cols-1 gap-6 place-items-center">
+      <div className="grid grid-cols-1 gap-4 xs:gap-6 place-items-center px-3 xs:px-4 sm:px-6">
         {/* 🔖 Título */}
         <h2
-          className={`font-['Irish_Grover'] text-4xl px-6 py-2 rounded-full shadow-md transition-all duration-300 inline-block
+          className={`font-['Irish_Grover'] text-2xl xs:text-3xl sm:text-4xl md:text-5xl px-3 xs:px-4 sm:px-6 py-2 xs:py-3 rounded-full shadow-md transition-all duration-300 inline-block
             bg-red-600 text-white ${
               tapHighlight === "title"
                 ? "bg-[#d4af37] text-black scale-105"
@@ -149,7 +149,7 @@ export default function Footer() {
         {/* 🕒 Reloj */}
         <div className="flex justify-center relative z-10">
           <div
-            className="inline-block px-6 py-4 cursor-pointer select-none"
+            className="inline-block px-3 xs:px-4 sm:px-6 py-2 xs:py-3 sm:py-4 cursor-pointer select-none"
             onClick={() => {
               setShowClock((prev) => {
                 toggleClockSound(!prev);
@@ -176,17 +176,17 @@ export default function Footer() {
                   animate={{ opacity: 1, y: 0 }}
                   exit={{ opacity: 0, y: -10 }}
                   transition={{ duration: 0.4 }}
-                  className={`px-6 py-3 rounded-xl border shadow-[0_0_20px_rgba(212,175,55,0.5)] inline-block ${bgBase} ${borderGold}`}
+                  className={`px-3 xs:px-4 sm:px-6 py-2 xs:py-3 rounded-lg xs:rounded-xl border shadow-[0_0_20px_rgba(212,175,55,0.5)] inline-block ${bgBase} ${borderGold}`}
                 >
                   <span
-                    className={`font-['Esteban'] text-xl ${
+                    className={`font-['Esteban'] text-sm xs:text-base sm:text-lg md:text-xl ${
                       isDark ? "text-white" : "text-black"
                     }`}
                     style={{ WebkitTextStroke: isDark ? "0.5px #d4af37" : "none" }}
                   >
                     {clockTime}
                   </span>
-                  <span className="ml-2 text-red-600 font-bold text-xl">
+                  <span className="ml-1 xs:ml-2 text-red-600 font-bold text-sm xs:text-base sm:text-lg md:text-xl">
                     {clockPeriod}
                   </span>
                 </motion.div>
@@ -197,7 +197,7 @@ export default function Footer() {
 
         {/* Créditos y derechos */}
         <div
-          className={`text-lg font-['Esteban'] ${baseText} drop-shadow-[0_0_2px_red] transition-all duration-300 hover:scale-105 ${
+          className={`text-sm xs:text-base sm:text-lg font-['Esteban'] ${baseText} drop-shadow-[0_0_2px_red] transition-all duration-300 hover:scale-105 ${
             tapHighlight === "credits" ? "text-[#d4af37] scale-105" : ""
           }`}
           onClick={() => handleTap("credits")}
@@ -209,7 +209,7 @@ export default function Footer() {
 
         {/* Frase */}
         <p
-          className={`font-['Labrada'] text-xl ${phraseText} transition-all duration-300 hover:text-[#c4af37] hover:drop-shadow-[0_0_6px_red] hover:-translate-y-1 hover:scale-105 ${
+          className={`font-['Labrada'] text-base xs:text-lg sm:text-xl ${phraseText} transition-all duration-300 hover:text-[#c4af37] hover:drop-shadow-[0_0_6px_red] hover:-translate-y-1 hover:scale-105 ${
             tapHighlight === "phrase" ? "text-[#d4af37] scale-105" : ""
           }`}
           onClick={() => handleTap("phrase")}
@@ -222,7 +222,7 @@ export default function Footer() {
 
         {/* Autor */}
         <p
-          className={`font-['Esteban'] ${authorText} drop-shadow-[0_0_2px_red] transition-all duration-300 hover:scale-105 hover:rotate-1 ${
+          className={`font-['Esteban'] text-sm xs:text-base ${authorText} drop-shadow-[0_0_2px_red] transition-all duration-300 hover:scale-105 hover:rotate-1 ${
             tapHighlight === "author" ? "text-[#d4af37] scale-105" : ""
           }`}
           onClick={() => handleTap("author")}
@@ -233,8 +233,8 @@ export default function Footer() {
         {/* Redes Sociales */}
         <div
           className={`grid ${
-            isMobile ? "grid-cols-1 gap-4" : "grid-cols-3 gap-6"
-          } place-items-center mt-8`}
+            isMobile ? "grid-cols-1 gap-3 xs:gap-4" : "grid-cols-3 gap-4 xs:gap-6"
+          } place-items-center mt-4 xs:mt-6 sm:mt-8`}
         >
           {Object.entries(footerData.social).map(([key, social]) => (
             <a
@@ -246,22 +246,22 @@ export default function Footer() {
                 playSound(social.sound);
                 handleTap(key);
               }}
-              className={`flex items-center gap-2 rounded-3xl px-5 py-3 border-2 transition-all duration-300 shadow-md ${bgBase} ${borderGold} ${
+              className={`flex items-center gap-1 xs:gap-2 rounded-2xl xs:rounded-3xl px-3 xs:px-4 sm:px-5 py-2 xs:py-3 border-2 transition-all duration-300 shadow-md ${bgBase} ${borderGold} ${
                 isDark ? "text-white" : "text-black"
               } hover:border-red-600 hover:shadow-[0_0_15px_rgba(255,0,0,0.4)] ${
                 tapHighlight === key ? "border-red-600 scale-105" : ""
               }`}
             >
               {key === "linkedin" && (
-                <FaLinkedin className="text-blue-600 text-2xl transition-all duration-300 hover:scale-125" />
+                <FaLinkedin className="text-blue-600 text-lg xs:text-xl sm:text-2xl transition-all duration-300 hover:scale-125" />
               )}
               {key === "whatsapp" && (
-                <FaWhatsapp className="text-green-600 text-2xl transition-all duration-300 hover:scale-125" />
+                <FaWhatsapp className="text-green-600 text-lg xs:text-xl sm:text-2xl transition-all duration-300 hover:scale-125" />
               )}
               {key === "github" && (
-                <FaGithub className="text-[#333] dark:text-white text-2xl transition-all duration-300 hover:scale-125" />
+                <FaGithub className="text-[#333] dark:text-white text-lg xs:text-xl sm:text-2xl transition-all duration-300 hover:scale-125" />
               )}
-              <span className="font-['Esteban'] hover:text-[#d4af37] transition-all duration-300">
+              <span className="font-['Esteban'] text-xs xs:text-sm hover:text-[#d4af37] transition-all duration-300">
                 {social.label}
               </span>
             </a>

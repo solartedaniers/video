@@ -114,35 +114,35 @@ export default function Navbar() {
     <nav className={`fixed top-0 left-0 w-full z-50 shadow-lg transition-all duration-500 ${bgMain}`}>
       {/* 🔘 Botón menú móvil */}
       <div
-        className="flex items-center px-4 py-2 md:hidden cursor-pointer"
+        className="flex items-center px-2 xs:px-3 sm:px-4 py-1.5 xs:py-2 cursor-pointer"
         onClick={() => setMenuOpen(!menuOpen)}
       >
-        <span className={`font-bold text-lg transition-colors duration-300 ${textMenu}`}>☰ Menú</span>
+        <span className={`font-bold text-sm xs:text-base sm:text-lg transition-colors duration-300 ${textMenu}`}>☰ <span className="hidden xs:inline">Menú</span></span>
       </div>
 
       {/* 📱 Menú móvil (fondo dorado completo) */}
       <div
-        className={`fixed top-14 left-0 w-full h-[calc(100vh-56px)] bg-[#d4af37] shadow-xl z-40 transform transition-transform duration-300 ease-in-out md:hidden ${
+        className={`fixed top-12 xs:top-14 left-0 w-full h-[calc(100vh-48px)] xs:h-[calc(100vh-56px)] bg-[#d4af37] shadow-xl z-40 transform transition-transform duration-300 ease-in-out md:hidden ${
           menuOpen ? "translate-x-0" : "-translate-x-full"
         }`}
       >
-        <div className="flex flex-col gap-2 p-4 h-full justify-between">
-          <div className="flex flex-col gap-3">
+        <div className="flex flex-col gap-1 xs:gap-2 p-2 xs:p-3 sm:p-4 h-full justify-between">
+          <div className="flex flex-col gap-2 xs:gap-3">
             {navbarContent.menu.map((item, index) => (
               <a
                 key={item.id}
                 href={`#${item.id}`}
                 onClick={() => handleSelect(index)}
-                className={`flex items-center gap-3 px-4 py-2 rounded-xl border transition-all duration-300 cursor-pointer ${
+                className={`flex items-center gap-2 xs:gap-3 px-2 xs:px-3 sm:px-4 py-1.5 xs:py-2 rounded-lg xs:rounded-xl border transition-all duration-300 cursor-pointer ${
                   selectedIndex === index
                     ? "border-red-600 shadow-[0_0_15px_rgba(255,0,0,0.5)] scale-105"
                     : "border-transparent hover:border-red-600 hover:shadow-[0_0_10px_rgba(255,0,0,0.4)] hover:scale-105"
                 } ${bgItem}`}
               >
-                <div className="w-8 h-8 flex items-center justify-center rounded-full bg-[#d4af37] text-black">
+                <div className="w-6 h-6 xs:w-8 xs:h-8 flex items-center justify-center rounded-full bg-[#d4af37] text-black">
                   {icons[index]}
                 </div>
-                <span className="font-['Irish_Grover'] text-sm hover:text-[#d4af37] hover:drop-shadow-[0_0_6px_gold] transition-all">
+                <span className="font-['Irish_Grover'] text-xs xs:text-sm hover:text-[#d4af37] hover:drop-shadow-[0_0_6px_gold] transition-all">
                   {item.label}
                 </span>
               </a>
@@ -150,18 +150,18 @@ export default function Navbar() {
           </div>
 
           {/* 🌗 Idioma y tema (al fondo, dentro del mismo fondo dorado) */}
-          <div className="flex justify-center gap-3 mt-6 pb-4">
+          <div className="flex justify-center gap-2 xs:gap-3 mt-4 xs:mt-6 pb-2 xs:pb-4">
             <button
               onClick={toggleLang}
-              className="px-3 py-2 bg-black text-[#d4af37] rounded-xl hover:bg-red-600 hover:text-white transition-all"
+              className="px-2 xs:px-3 py-1.5 xs:py-2 bg-black text-[#d4af37] rounded-lg xs:rounded-xl hover:bg-red-600 hover:text-white transition-all text-xs xs:text-sm"
             >
               🌐 {lang === "es" ? "EN" : "ES"}
             </button>
             <button
               onClick={toggleTheme}
-              className="px-3 py-2 bg-black text-[#d4af37] rounded-xl hover:bg-red-600 hover:text-white transition-all"
+              className="px-2 xs:px-3 py-1.5 xs:py-2 bg-black text-[#d4af37] rounded-lg xs:rounded-xl hover:bg-red-600 hover:text-white transition-all"
             >
-              {theme === "light" ? <Sun /> : <Moon />}
+              {theme === "light" ? <Sun size={16} /> : <Moon size={16} />}
             </button>
           </div>
         </div>
@@ -169,8 +169,8 @@ export default function Navbar() {
 
       {/* 🖥 Escritorio */}
       <div className="hidden md:block md:px-2 md:pt-2">
-        <div className="max-w-[99%] mx-auto px-4 py-2 bg-[#d4af37] transition-all duration-500">
-          <div className="grid grid-cols-11 gap-2 max-w-7xl mx-auto">
+        <div className="max-w-[99%] mx-auto px-2 lg:px-4 py-1 lg:py-2 bg-[#d4af37] transition-all duration-500">
+          <div className="grid grid-cols-11 gap-1 lg:gap-2 max-w-7xl mx-auto">
             {navbarContent.menu.map((item, index) => (
               <a
                 key={item.id}
@@ -178,34 +178,34 @@ export default function Navbar() {
                 onMouseEnter={() => !isMobile && setSelectedIndex(index)}
                 onMouseLeave={() => !isMobile && setSelectedIndex(null)}
                 onClick={() => handleSelect(index)}
-                className={`flex flex-col items-center justify-center gap-1 px-3 py-1 rounded-xl border transition-all duration-300 cursor-pointer ${
+                className={`flex flex-col items-center justify-center gap-1 px-1 lg:px-2 xl:px-3 py-1 rounded-lg lg:rounded-xl border transition-all duration-300 cursor-pointer ${
                   selectedIndex === index
                     ? "border-red-600 shadow-[0_0_15px_rgba(255,0,0,0.5)] scale-105"
                     : "border-transparent hover:border-red-600 hover:shadow-[0_0_10px_rgba(255,0,0,0.4)] hover:scale-105"
                 } ${bgItem}`}
               >
-                <div className="w-9 h-9 flex items-center justify-center rounded-full bg-[#d4af37] text-black">
+                <div className="w-6 h-6 lg:w-8 lg:h-8 xl:w-9 xl:h-9 flex items-center justify-center rounded-full bg-[#d4af37] text-black">
                   {icons[index]}
                 </div>
-                <span className="font-['Irish_Grover'] text-xs sm:text-sm hover:text-[#d4af37] hover:drop-shadow-[0_0_6px_gold] transition-all">
+                <span className="font-['Irish_Grover'] text-xs lg:text-sm hover:text-[#d4af37] hover:drop-shadow-[0_0_6px_gold] transition-all text-center leading-tight">
                   {item.label}
                 </span>
               </a>
             ))}
 
             {/* 🌐 Botones dentro del fondo dorado */}
-            <div className="flex items-center justify-center gap-3 px-3 py-1 rounded-xl border border-transparent hover:border-red-600 transition-all duration-300 bg-[#d4af37]">
+            <div className="flex items-center justify-center gap-1 lg:gap-2 xl:gap-3 px-1 lg:px-2 xl:px-3 py-1 rounded-lg lg:rounded-xl border border-transparent hover:border-red-600 transition-all duration-300 bg-[#d4af37]">
               <button
                 onClick={toggleLang}
-                className="px-2 py-1 bg-black text-[#d4af37] rounded-xl hover:bg-red-600 hover:text-white transition-all text-xs sm:text-sm"
+                className="px-1 lg:px-2 py-1 bg-black text-[#d4af37] rounded-lg lg:rounded-xl hover:bg-red-600 hover:text-white transition-all text-xs lg:text-sm"
               >
                 🌐 {lang === "es" ? "EN" : "ES"}
               </button>
               <button
                 onClick={toggleTheme}
-                className="px-2 py-1 bg-black text-[#d4af37] rounded-xl hover:bg-red-600 hover:text-white transition-all"
+                className="px-1 lg:px-2 py-1 bg-black text-[#d4af37] rounded-lg lg:rounded-xl hover:bg-red-600 hover:text-white transition-all"
               >
-                {theme === "light" ? <Sun size={16} /> : <Moon size={16} />}
+                {theme === "light" ? <Sun size={14} className="lg:w-4 lg:h-4" /> : <Moon size={14} className="lg:w-4 lg:h-4" />}
               </button>
             </div>
           </div>

@@ -116,44 +116,44 @@ export default function Contact() {
 
   return (
     <section
-      className="relative min-h-screen flex flex-col items-center justify-center bg-cover bg-center p-6 transition-all duration-500"
+      className="relative min-h-screen flex flex-col items-center justify-center bg-cover bg-center p-3 xs:p-4 sm:p-6 transition-all duration-500"
       style={{ backgroundImage: `url(${c.background})` }}
     >
       {/* 🔴 Título principal */}
-      <h2 className="text-4xl text-center px-6 py-2 rounded-full shadow-lg transition-all duration-500 bg-red-600/80 text-white font-['Irish_Grover'] hover:bg-[#d4af37] hover:text-black hover:shadow-[0_0_25px_#d4af37] mb-4">
+      <h2 className="text-2xl xs:text-3xl sm:text-4xl md:text-5xl lg:text-6xl text-center px-3 xs:px-4 sm:px-6 md:px-8 py-2 xs:py-3 sm:py-4 rounded-full shadow-lg transition-all duration-500 bg-red-600/80 text-white font-['Irish_Grover'] hover:bg-[#d4af37] hover:text-black hover:shadow-[0_0_25px_#d4af37] mb-3 xs:mb-4 sm:mb-6">
         {c.title}
       </h2>
 
       {/* 💬 Mensaje - visible en mobile debajo del título */}
-      <div className="block md:hidden w-full max-w-md mb-8">
+      <div className="block lg:hidden w-full max-w-sm xs:max-w-md mb-4 xs:mb-6 sm:mb-8">
         <div
-          className={`${boxBg} p-4 rounded-xl shadow-md border hover:border-red-600 transition-all duration-300`}
+          className={`${boxBg} p-3 xs:p-4 rounded-lg xs:rounded-xl shadow-md border hover:border-red-600 transition-all duration-300`}
         >
           <p
-            className={`font-['Esteban'] ${textMain} text-base leading-relaxed`}
+            className={`font-['Esteban'] ${textMain} text-sm xs:text-base leading-relaxed`}
             dangerouslySetInnerHTML={{ __html: c.message }}
           />
         </div>
       </div>
 
       {/* 💬 Mensaje - visible solo en escritorio */}
-      <div className="hidden md:block">
+      <div className="hidden lg:block">
         <div
-          className={`${boxBg} p-6 rounded-xl shadow-md border hover:border-red-600 hover:shadow-[#d4af37] transition-all duration-300 hover:scale-105 max-w-xl w-full mb-12`}
+          className={`${boxBg} p-4 xs:p-6 rounded-xl shadow-md border hover:border-red-600 hover:shadow-[#d4af37] transition-all duration-300 hover:scale-105 max-w-lg xl:max-w-xl w-full mb-8 xl:mb-12`}
         >
           <p
-            className={`font-['Esteban'] ${textMain} text-lg leading-relaxed`}
+            className={`font-['Esteban'] ${textMain} text-base xs:text-lg leading-relaxed`}
             dangerouslySetInnerHTML={{ __html: c.message }}
           />
         </div>
       </div>
 
       {/* 🟨 Contenido principal */}
-      <div className="grid grid-cols-1 md:grid-cols-2 gap-12 w-full max-w-7xl items-center">
+      <div className="grid grid-cols-1 lg:grid-cols-2 gap-6 xs:gap-8 sm:gap-10 lg:gap-12 w-full max-w-7xl items-center">
         {/* 👤 Imagen */}
-        <div className="hidden md:flex justify-center items-start mt-5">
+        <div className="hidden lg:flex justify-center items-start mt-3 xs:mt-4 sm:mt-5">
           <div
-            className={`rounded-full border-4 border-yellow-500 overflow-hidden w-80 h-80 transition-all duration-300 cursor-pointer ${
+            className={`rounded-full border-3 xs:border-4 border-yellow-500 overflow-hidden w-64 xs:w-72 sm:w-80 h-64 xs:h-72 sm:h-80 transition-all duration-300 cursor-pointer ${
               hovered ? "shadow-[0_0_30px_10px_gold] scale-110" : "shadow-lg"
             }`}
             onMouseEnter={() => hasHover && setHovered(true)}
@@ -171,19 +171,19 @@ export default function Contact() {
         </div>
 
         {/* 📨 Formulario y redes */}
-        <div className="flex flex-col items-center justify-center text-center gap-8 w-full">
+        <div className="flex flex-col items-center justify-center text-center gap-4 xs:gap-6 sm:gap-8 w-full">
           {/* 🌐 Redes sociales (LinkedIn y WhatsApp en fila en móvil) */}
-          <div className="flex flex-wrap justify-center gap-4 w-full max-w-md">
+          <div className="flex flex-wrap justify-center gap-2 xs:gap-3 sm:gap-4 w-full max-w-sm xs:max-w-md">
             {/* 🔹 LinkedIn */}
             <a
               href={c.social.linkedin.url}
               target="_blank"
               rel="noopener noreferrer"
               onClick={playLinkedInSound}
-              className={`${boxBg} flex items-center justify-center gap-2 p-4 rounded-xl border shadow-md hover:border-yellow-500 hover:scale-105 transition-all duration-300 w-[48%] sm:w-auto`}
+              className={`${boxBg} flex items-center justify-center gap-1 xs:gap-2 p-2 xs:p-3 sm:p-4 rounded-lg xs:rounded-xl border shadow-md hover:border-yellow-500 hover:scale-105 transition-all duration-300 w-[48%] xs:w-[45%] sm:w-auto`}
             >
-              <FaLinkedin className="text-2xl text-blue-600" />
-              <span className={`font-['Esteban'] ${textMain} text-base`}>{c.social.linkedin.label}</span>
+              <FaLinkedin className="text-lg xs:text-xl sm:text-2xl text-blue-600" />
+              <span className={`font-['Esteban'] ${textMain} text-xs xs:text-sm sm:text-base`}>{c.social.linkedin.label}</span>
             </a>
 
             {/* 🟢 WhatsApp */}
@@ -192,66 +192,66 @@ export default function Contact() {
               target="_blank"
               rel="noopener noreferrer"
               onClick={playWhatsAppSound}
-              className={`${boxBg} flex items-center justify-center gap-2 p-4 rounded-xl border shadow-md hover:border-yellow-500 hover:scale-105 transition-all duration-300 w-[48%] sm:w-auto`}
+              className={`${boxBg} flex items-center justify-center gap-1 xs:gap-2 p-2 xs:p-3 sm:p-4 rounded-lg xs:rounded-xl border shadow-md hover:border-yellow-500 hover:scale-105 transition-all duration-300 w-[48%] xs:w-[45%] sm:w-auto`}
             >
-              <FaWhatsapp className="text-2xl text-green-600" />
-              <span className={`font-['Esteban'] ${textMain} text-base`}>{c.social.whatsapp.label}</span>
+              <FaWhatsapp className="text-lg xs:text-xl sm:text-2xl text-green-600" />
+              <span className={`font-['Esteban'] ${textMain} text-xs xs:text-sm sm:text-base`}>{c.social.whatsapp.label}</span>
             </a>
           </div>
 
           {/* ✉️ Formulario */}
-          <form onSubmit={handleSubmit} className="flex flex-col gap-4 w-full max-w-md text-left">
+          <form onSubmit={handleSubmit} className="flex flex-col gap-3 xs:gap-4 w-full max-w-sm xs:max-w-md text-left">
             {/* 📧 Email */}
-            <label className="font-['Esteban'] text-lg text-slate-200">{c.fields.email.label}</label>
-            <div className={`${boxBg} flex items-center gap-2 p-3 rounded-xl border-2 border-red-600`}>
-              <FaEnvelope className="text-gray-500" />
+            <label className="font-['Esteban'] text-sm xs:text-base sm:text-lg text-slate-200">{c.fields.email.label}</label>
+            <div className={`${boxBg} flex items-center gap-2 p-2 xs:p-3 rounded-lg xs:rounded-xl border-2 border-red-600`}>
+              <FaEnvelope className="text-gray-500 text-sm xs:text-base" />
               <input
                 type="email"
                 placeholder={c.fields.email.placeholder}
-                className={`bg-transparent w-full outline-none font-['Esteban'] ${placeholderColor} ${inputText}`}
+                className={`bg-transparent w-full outline-none font-['Esteban'] text-sm xs:text-base ${placeholderColor} ${inputText}`}
                 value={email}
                 onChange={(e) => setEmail(e.target.value)}
               />
             </div>
-            {errors.email && <p className="bg-gray-200 text-black text-sm px-3 py-1 rounded-md">{errors.email}</p>}
+            {errors.email && <p className="bg-gray-200 text-black text-xs xs:text-sm px-2 xs:px-3 py-1 rounded-md">{errors.email}</p>}
 
             {/* 👤 Nombre */}
-            <label className="font-['Esteban'] text-lg text-slate-200">{c.fields.name.label}</label>
-            <div className={`${boxBg} flex items-center gap-2 p-3 rounded-xl border-2 border-red-600`}>
-              <FaUser className="text-gray-500" />
+            <label className="font-['Esteban'] text-sm xs:text-base sm:text-lg text-slate-200">{c.fields.name.label}</label>
+            <div className={`${boxBg} flex items-center gap-2 p-2 xs:p-3 rounded-lg xs:rounded-xl border-2 border-red-600`}>
+              <FaUser className="text-gray-500 text-sm xs:text-base" />
               <input
                 type="text"
                 placeholder={c.fields.name.placeholder}
-                className={`bg-transparent w-full outline-none font-['Esteban'] ${placeholderColor} ${inputText}`}
+                className={`bg-transparent w-full outline-none font-['Esteban'] text-sm xs:text-base ${placeholderColor} ${inputText}`}
                 value={nombre}
                 onChange={(e) => setNombre(e.target.value)}
               />
             </div>
-            {errors.nombre && <p className="bg-gray-200 text-black text-sm px-3 py-1 rounded-md">{errors.nombre}</p>}
+            {errors.nombre && <p className="bg-gray-200 text-black text-xs xs:text-sm px-2 xs:px-3 py-1 rounded-md">{errors.nombre}</p>}
 
             {/* 📝 Contenido */}
-            <label className="font-['Esteban'] text-lg text-slate-200">{c.fields.content.label}</label>
+            <label className="font-['Esteban'] text-sm xs:text-base sm:text-lg text-slate-200">{c.fields.content.label}</label>
             <textarea
               placeholder={c.fields.content.placeholder}
-              className={`${boxBg} p-3 rounded-xl border-2 border-red-600 w-full h-28 font-['Esteban'] ${placeholderColor} ${inputText}`}
+              className={`${boxBg} p-2 xs:p-3 rounded-lg xs:rounded-xl border-2 border-red-600 w-full h-20 xs:h-24 sm:h-28 font-['Esteban'] text-sm xs:text-base ${placeholderColor} ${inputText}`}
               value={contenido}
               onChange={(e) => setContenido(e.target.value)}
             />
             {errors.contenido && (
-              <p className="bg-gray-200 text-black text-sm px-3 py-1 rounded-md">{errors.contenido}</p>
+              <p className="bg-gray-200 text-black text-xs xs:text-sm px-2 xs:px-3 py-1 rounded-md">{errors.contenido}</p>
             )}
 
             {/* 🚀 Botón enviar */}
             <button
               type="submit"
-              className={`${boxBg} flex items-center justify-center gap-2 px-6 py-3 rounded-full border-2 border-red-600 hover:border-yellow-500 hover:shadow-lg hover:scale-105 transition-all duration-300`}
+              className={`${boxBg} flex items-center justify-center gap-2 px-4 xs:px-6 py-2 xs:py-3 rounded-full border-2 border-red-600 hover:border-yellow-500 hover:shadow-lg hover:scale-105 transition-all duration-300`}
             >
-              <FaPaperPlane className={`${inputText} animate-pulse`} />
-              <span className={`font-['Esteban'] ${inputText}`}>{c.fields.send}</span>
+              <FaPaperPlane className={`${inputText} animate-pulse text-sm xs:text-base`} />
+              <span className={`font-['Esteban'] text-sm xs:text-base ${inputText}`}>{c.fields.send}</span>
             </button>
 
             {successMsg && (
-              <p className="text-black text-base bg-gray-200 mt-3 py-2 px-3 rounded-md shadow-md animate-fadeIn">
+              <p className="text-black text-sm xs:text-base bg-gray-200 mt-2 xs:mt-3 py-2 px-2 xs:px-3 rounded-md shadow-md animate-fadeIn">
                 {successMsg}
               </p>
             )}

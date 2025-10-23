@@ -117,13 +117,13 @@ export default function Hero(): React.JSX.Element {
       />
 
       {/* 🔘 Controles */}
-      <div className="absolute top-4 sm:top-6 left-4 sm:left-6 z-30 flex flex-wrap gap-3 sm:gap-4">
+      <div className="absolute top-2 xs:top-3 sm:top-4 md:top-6 left-2 xs:left-3 sm:left-4 md:left-6 z-30 flex flex-wrap gap-2 xs:gap-3 sm:gap-4">
         <button
           onClick={toggleTheme}
           onTouchStart={() => handleTouchEffect("theme")}
           aria-label="Cambiar tema"
-          className={`px-4 sm:px-5 py-2 rounded-full border-[2px] shadow-md ${btnBg} ${borderColor}
-            transition-all duration-300 ease-in-out text-sm sm:text-base
+          className={`px-2 xs:px-3 sm:px-4 md:px-5 py-1.5 xs:py-2 sm:py-2.5 rounded-full border-[1px] xs:border-[2px] shadow-md ${btnBg} ${borderColor}
+            transition-all duration-300 ease-in-out text-xs xs:text-sm sm:text-base
             ${
               activeTouch === "theme"
                 ? "scale-110 border-red-600 shadow-[0_0_12px_rgba(255,0,0,0.6)]"
@@ -137,31 +137,32 @@ export default function Hero(): React.JSX.Element {
           onClick={toggleLang}
           onTouchStart={() => handleTouchEffect("lang")}
           aria-label="Cambiar idioma"
-          className={`px-4 sm:px-5 py-2 rounded-full border-[2px] shadow-md ${btnBg} ${borderColor}
-            transition-all duration-300 ease-in-out text-sm sm:text-base
+          className={`px-2 xs:px-3 sm:px-4 md:px-5 py-1.5 xs:py-2 sm:py-2.5 rounded-full border-[1px] xs:border-[2px] shadow-md ${btnBg} ${borderColor}
+            transition-all duration-300 ease-in-out text-xs xs:text-sm sm:text-base
             ${
               activeTouch === "lang"
                 ? "scale-110 border-red-600 shadow-[0_0_12px_rgba(255,0,0,0.6)]"
                 : "hover:scale-110 hover:border-red-600"
             }`}
         >
-          🌐 {lang === "es" ? "English" : "Español"}
+          🌐 <span className="hidden xs:inline">{lang === "es" ? "English" : "Español"}</span>
+          <span className="xs:hidden">{lang === "es" ? "EN" : "ES"}</span>
         </button>
       </div>
 
       {/* 🧍 Contenido principal */}
-      <div className="absolute inset-0 z-20 grid place-items-center px-4 sm:px-6">
-        <div className="flex flex-col items-center text-center gap-5 sm:gap-6 md:gap-8 translate-x-0 sm:translate-x-10 md:translate-x-20 lg:translate-x-40">
+      <div className="absolute inset-0 z-20 grid place-items-center px-2 sm:px-4 md:px-6 lg:px-8">
+        <div className="flex flex-col items-center text-center gap-3 sm:gap-4 md:gap-6 lg:gap-8 w-full max-w-7xl">
           {/* Marca */}
           <h1
             onTouchStart={() => handleTouchEffect("brand")}
-            className={`${textPrimary} text-3xl sm:text-4xl md:text-6xl lg:text-7xl mb-3 font-['Irish_Grover'] 
+            className={`${textPrimary} text-2xl xs:text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl mb-2 sm:mb-3 font-['Irish_Grover'] 
               transition-transform text-stroke-gold tracking-wide
               ${
                 activeTouch === "brand"
                   ? "scale-110 text-stroke-red"
                   : "hover:scale-110 hover:text-stroke-red"
-              } animate-pulse text-center leading-tight`}
+              } animate-pulse text-center leading-tight px-2`}
           >
             {t.brand}
           </h1>
@@ -169,8 +170,8 @@ export default function Hero(): React.JSX.Element {
           {/* Frase */}
           <p
             onTouchStart={() => handleTouchEffect("quote")}
-            className={`${textSecondary} text-sm sm:text-base md:text-lg lg:text-xl max-w-[90%] sm:max-w-[480px] md:max-w-[600px] 
-              px-4 sm:px-6 py-2 rounded-[30px] shadow-lg ${quoteBg} font-esteban transition-transform
+            className={`${textSecondary} text-xs xs:text-sm sm:text-base md:text-lg lg:text-xl xl:text-2xl max-w-[95%] xs:max-w-[90%] sm:max-w-[480px] md:max-w-[600px] lg:max-w-[700px] xl:max-w-[800px]
+              px-3 xs:px-4 sm:px-6 md:px-8 py-2 sm:py-3 rounded-[20px] sm:rounded-[30px] shadow-lg ${quoteBg} font-esteban transition-transform
               ${
                 activeTouch === "quote"
                   ? "scale-105 shadow-[0_0_20px_rgba(255,215,0,0.4)]"
@@ -188,8 +189,8 @@ export default function Hero(): React.JSX.Element {
           <button
             onClick={handleViewClick}
             onTouchStart={() => handleTouchEffect("view")}
-            className={`px-6 sm:px-8 md:px-10 py-2.5 sm:py-3 rounded-full border-[3px] font-bold text-sm sm:text-lg md:text-xl 
-              transition-transform font-[Instrument_Serif]
+            className={`px-4 xs:px-6 sm:px-8 md:px-10 lg:px-12 py-2 xs:py-2.5 sm:py-3 md:py-4 rounded-full border-[2px] sm:border-[3px] font-bold text-xs xs:text-sm sm:text-base md:text-lg lg:text-xl xl:text-2xl 
+              transition-transform font-[Instrument_Serif] w-auto min-w-[200px] xs:min-w-[220px] sm:min-w-[240px]
               ${
                 activeTouch === "view"
                   ? "scale-110 border-[#d4af37] shadow-[0_4px_20px_rgba(196,175,39,0.4)]"
