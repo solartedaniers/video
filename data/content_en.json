@@ -1,0 +1,242 @@
+{
+  "hero": {
+    "brand": "Daniers Solarte",
+    "quote": "The code is my sword,<br />logic is my shield.",
+    "view": "View Portfolio",
+    "language": "Español",
+    "video": "/videos/background-video.mp4"
+  },
+  "navbar": {
+    "menu": [
+      { "label": "Welcome", "id": "bienvenidos" },
+      { "label": "About Me", "id": "acercademi" },
+      { "label": "Technologies", "id": "tecnologias" },
+      { "label": "My Projects", "id": "misproyectos" },
+      { "label": "Testimonials", "id": "testimonios" },
+      { "label": "CV", "id": "cv" },
+      { "label": "Academic and Work Experience", "id": "experiencia" },
+      { "label": "My Life Philosophy", "id": "filosofia" },
+      { "label": "Contact", "id": "contacto" },
+      { "label": "Footer", "id": "PieDePágina" }
+    ]
+  },
+  "welcome": {
+    "home": "Home",
+    "subtitle": "Software Engineer",
+    "welcomeTitle": "Welcome",
+    "description": [
+      "I am a software engineer and I believe technology should go beyond solving problems—it should transform lives.",
+      "I specialize in backend with Node.js, Spring Boot, Python, and Java, and I also enjoy frontend challenges with React, Angular, Next.js, and Tailwind CSS. I’m passionate about building secure, scalable, and intuitive applications.",
+      "I’m inspired by cybersecurity, artificial intelligence, and mixed reality because they connect the digital with the human. <br />I invite you to explore my portfolio and discover how each project reflects my passion, my learning, and my view of the software world."
+    ]
+  },
+  "about": {
+    "title": "About Me",
+    "items": [
+      {
+        "img": "/images/family.webp",
+        "audio": "/sounds/family.mp3",
+        "text": "I love going out for walks with my family and spending time with my sister. In my opinion, those simple moments are very valuable, as they remind us of how important it is to enjoy the company of those we love the most."
+      },
+      {
+        "img": "/images/motorcycle.webp",
+        "audio": "/sounds/motorcycle.mp3",
+        "text": "I love traveling by motorcycle, exploring new places. Because each trip is an opportunity to discover landscapes, cultures, and ways of thinking that enrich me and help me grow."
+      },
+      {
+        "img": "/images/group.webp",
+        "audio": "/sounds/group.mp3",
+        "text": "I like playing futsal with friends, not in tournaments, but as a space to share, laugh, and disconnect. I also practice taekwondo, walk, or run frequently because I like to stay active and feel the energy of movement."
+      },
+      {
+        "img": "/images/paragliding.webp",
+        "audio": "/sounds/paragliding.mp3",
+        "text": "I am passionate about mountains and extreme sports because there I find both peace and adrenaline. I like to feel that rush of freedom and challenge that reminds me that life is also meant for taking risks."
+      },
+      {
+        "img": "/images/Bible.webp",
+        "audio": "/sounds/bible.mp3",
+        "text": "I enjoy reading the Bible, having conversations, and sharing with people who inspire me. I like staying active and helping others because I believe that personal growth is a journey built with humility and the ability to listen."
+      }
+    ]
+  },
+  "technologies": {
+    "title": "Technologies and Tools",
+    "quote": "“Each language, a technique that I perfect every day.”",
+    "video": "/videos/stellar-wolf.mp4",
+    "list": [
+      { "name": "Angular", "icon": "SiAngular", "color": "#dd0031" },
+      { "name": "Tailwind", "icon": "SiTailwindcss", "color": "#38bdf8" },
+      { "name": "Next.js", "icon": "SiNextdotjs", "color": "#000000" },
+      { "name": "Django", "icon": "SiDjango", "color": "#092e20" },
+      { "name": "Python", "icon": "SiPython", "color": "#3776AB" },
+      { "name": "MySQL", "icon": "SiMysql", "color": "#00758f" },
+      { "name": "Java", "icon": "FaJava", "color": "#f89820" },
+      { "name": "C#", "icon": "SiSharp", "color": "#9b4f96" },
+      { "name": "Unity", "icon": "SiUnity", "color": "#000000" },
+      { "name": "Spring Boot", "icon": "SiSpringboot", "color": "#6DB33F" },
+      { "name": "GitHub", "icon": "FaGithub", "color": "#181717" }
+    ]
+  },
+  "projects": [
+    {
+      "image": "/images/fermentation.webp",
+      "title": "Fermentation Monitoring",
+      "description": "The Coffee Fermentation Monitoring System tracks critical parameters of the coffee fermentation process in real time, such as temperature, pH, and humidity.",
+      "tools": ["TypeScript", "HTML", "CSS", "Angular", "Node.js"],
+      "gitUrl": "https://github.com/solartedaniers/software-Patrones.git"
+    },
+    {
+      "image": "/images/fermentation.webp",
+      "title": "Coca-Cola Company",
+      "description": "Program that calculates vacation days based on role and seniority.",
+      "tools": ["Java"],
+      "gitUrl": "https://github.com/solartedaniers/Coca-cola.git"
+    },
+    {
+      "image": "/images/fermentation.webp",
+      "title": "PlantSim",
+      "description": "PlantSim models plant growth based on environmental variables.",
+      "tools": ["HTML", "Java", "SCSS", "TypeScript", "Spring Boot", "Angular", "Node.js"],
+      "gitUrl": "https://github.com/Pipemora1324/BigProyect.git"
+    },
+    {
+      "image": "/images/interface.webp",
+      "title": "Interface",
+      "description": "Interface built in Next.js using Flex and Grid for a modern layout.",
+      "tools": ["TypeScript", "JavaScript", "CSS", "Next.js", "Tailwind"],
+      "gitUrl": "https://github.com/solartedaniers/interface.git"
+    },
+    {
+      "image": "/images/fermentation.webp",
+      "title": "Fermentation Monitoring",
+      "description": "The Coffee Fermentation Monitoring System tracks critical parameters of the coffee fermentation process in real time.",
+      "tools": ["TypeScript", "HTML", "CSS", "Angular", "Node.js"],
+      "gitUrl": "https://github.com/solartedaniers/software-Patrones.git"
+    },
+    {
+      "image": "/images/fermentation.webp",
+      "title": "Fermentation Monitoring",
+      "description": "Intentional repetition for future tests.",
+      "tools": ["TypeScript", "HTML", "CSS", "Angular", "Node.js"],
+      "gitUrl": "https://github.com/solartedaniers/software-Patrones.git"
+    }
+  ],
+  "testimonials": {
+    "title": "Testimonials",
+    "list": [
+      {
+        "name": "Danier Fernando",
+        "text": "Working with Daniers Solarte has been an inspiring experience. His passion for technology, commitment to quality, and ability to turn ideas into innovative solutions make him an exceptional professional.",
+        "image": "/images/Daniel.webp"
+      },
+      {
+        "name": "David Fernando Ramírez de la Parra",
+        "text": "During the time I have spent with Daniers in the Software Engineering program, I have noticed that he is a very responsible, dedicated, and committed person in everything he does. He always shows a great interest in learning and improving, and his discipline is evident in every task or project he undertakes. I believe that these qualities, along with his perseverance and positive attitude, are what will lead him to achieve great things in his professional future.",
+        "image": "/images/Ramirez.webp"
+      },
+      {
+        "name": "Roiman Andres Romo Limas",
+        "text": "More than two years ago, while still a teenager, Daniers Solarte helped me complete an agricultural task, regardless of the fact that night had fallen long after his working hours. That gesture reflects his dedication, generosity, and commitment. Daniers has always been characterized by his humility, respect for others, and by carrying God in his heart. His honesty, personal values, and respect for people make him someone trustworthy and admirable. He possesses great skill in handling agricultural and mechanical tools, which has allowed him to pursue his dreams with full confidence. In any field he works in, he does so with agility, enthusiasm, and dedication, always giving his best.",
+        "image": "/images/Andres.webp"
+      },
+      {
+        "name": "Danier Fernando",
+        "text": "Another repeated testimonial for future editing tests.",
+        "image": "/images/Daniel.webp"
+      }
+    ]
+  },
+  "contact": {
+    "background": "/images/village.webp",
+    "title": "Contact",
+    "message": "“If you want to build something amazing, don’t hesitate to reach out.<br />I’m always willing to learn and contribute,<br />so message me and let’s take the first step.”",
+    "profile": { "default": "/images/profile1.webp", "hover": "/images/profile2.webp" },
+    "social": {
+      "linkedin": { "url": "https://www.linkedin.com/in/daniers-solarte-08716b381", "label": "LinkedIn" },
+      "whatsapp": { "url": "https://wa.me/3167969206", "label": "WhatsApp" }
+    },
+    "fields": {
+      "email": { "label": "Email*", "placeholder": "Example@gmail.com" },
+      "name": { "label": "Name*", "placeholder": "Xavier" },
+      "content": { "label": "Message*", "placeholder": "Write your message here" },
+      "send": "Send"
+    },
+    "errors": {
+      "email": "Please enter a valid email.",
+      "nombre": "Only letters are accepted. Must contain at least 3 characters.",
+      "onlyLetters": "Only letters allowed, no numbers.",
+      "contenido": "This field is required."
+    },
+    "success": "✅ Your message was sent successfully.",
+    "error": "❌ Your message could not be sent. Please try again."
+  },
+  "cv": {
+    "background": "/images/background.webp",
+    "video": "/videos/parchment.mp4",
+    "title": "CV",
+    "pdf": "/docs/Cv English.pdf",
+    "translations": {
+      "view": "View CV",
+      "close": "Close CV",
+      "download": "Download CV in PDF"
+    }
+  },
+  "experiencia": {
+    "title": "Academic and Work Experience",
+    "academic": "Academic Experience",
+    "academicText": "I am a Software Engineering student at the Universidad Cooperativa de Colombia, Pasto Campus (currently in 5th semester). I participated in the First National Seminar on Software Engineering.",
+    "academicProjects": "Development of academic projects:",
+    "academicList": [
+      "Plant growth simulator.",
+      "Coffee monitoring system.",
+      "Application for calculating employee vacation days based on department and seniority.",
+      "Design and development of interfaces focused on usability and user experience."
+    ],
+    "work": "Work Experience",
+    "workText": "I have worked as a cook, delivery person, salesperson, and technical assistant. Each experience has taught me discipline, teamwork, and commitment.",
+    "workList": [
+      "Fast food cook – DMaíz Restaurant.",
+      "Fruit delivery driver – Frutas Gómez.",
+      "Store clerk – Lima Pan Bakery.",
+      "Assistant in installing light poles and wiring."
+    ]
+  },
+  "filosofia": {
+    "title": "My Life Philosophy",
+    "text": [
+      "My life philosophy is based on three pillars: faith in God, love for my family, and the conviction that every challenge is an opportunity to grow.",
+      "I believe that discipline and consistency are the path to achieving goals, while continuous learning allows us to strengthen and evolve.",
+      "Living fully means enjoying every moment — laughing, crying, dreaming — understanding that each experience shapes our character.",
+      "I seek to help others and add value because true greatness lies not in what we achieve, but in keeping intact the principles that define us."
+    ],
+    "image": "/images/samurai-tiger.webp",
+    "background": "/images/path.webp"
+  },
+  "footer": {
+    "title": "Footer",
+    "credits": "© 2026 Damiers Alexander Solarte Limas - Software Engineer",
+    "rights": "All rights reserved",
+    "phrase": "“True greatness lies in growing without losing the principles that define us.”",
+    "author": "Portfolio created with passion by Damiers Solarte – 2025",
+    "backgroundLeft": "/images/wolf.webp",
+    "backgroundRight": "/images/samurai.webp",
+    "social": {
+      "linkedin": {
+        "label": "LinkedIn",
+        "url": "https://www.linkedin.com/in/damiers-solarte-08716b381",
+        "sound": "LinkedIn.mp3"
+      },
+      "whatsapp": {
+        "label": "WhatsApp",
+        "url": "https://wa.me/573167969206",
+        "sound": "whatsapp.mp3"
+      },
+      "github": {
+        "label": "GitHub",
+        "url": "https://github.com/solartedaniers",
+        "sound": "url.mp3"
+      }
+    }
+  }
+}

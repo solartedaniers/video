@@ -1,0 +1,236 @@
+{
+  "hero": {
+    "brand": "Daniers Solarte",
+    "quote": "El código es mi espada,<br />la lógica mi escudo.",
+    "view": "Ver Portafolio",
+    "language": "English",
+    "video": "/videos/background-video.mp4"
+  },
+  "navbar": {
+    "menu": [
+      { "label": "Bienvenidos", "id": "bienvenidos" },
+      { "label": "Acerca de mí", "id": "acercademi" },
+      { "label": "Tecnologías", "id": "tecnologias" },
+      { "label": "Mis Proyectos", "id": "misproyectos" },
+      { "label": "Testimonios", "id": "testimonios" },
+      { "label": "CV", "id": "cv" },
+      { "label": "Experiencia Académica y Laboral", "id": "experiencia" },
+      { "label": "Mi Filosofía de Vida", "id": "filosofia" },
+      { "label": "Contacto", "id": "contacto" },
+      { "label": "Pie de Página", "id": "PieDePágina" }
+    ]
+  },
+  "welcome": {
+    "home": "Inicio",
+    "subtitle": "Ingeniero de Software",
+    "welcomeTitle": "Bienvenidos",
+    "description": [
+      "Soy ingeniero de software y creo que la tecnología debe ir más allá de resolver problemas: debe transformar vidas.",
+      "Me especializo en backend con Node.js, Spring Boot, Python y Java, y también disfruto los desafíos del frontend con React, Angular, Next.js y Tailwind CSS. Me apasiona crear aplicaciones seguras, escalables e intuitivas.",
+      "Me inspiran la ciberseguridad, la inteligencia artificial y la realidad mixta, porque conectan lo digital con lo humano. <br />Te invito a explorar mi portafolio y descubrir cómo cada proyecto refleja mi pasión, mi aprendizaje y mi forma de ver el mundo del software."
+    ]
+  },
+  "about": {
+    "title": "Acerca de mí",
+    "items": [
+      {
+        "img": "/images/family.webp",
+        "audio": "/sounds/family.mp3",
+        "text": "Me encanta salir a pasear con mi familia y pasar tiempo con mi hermana. A mi juicio, esos instantes simples son muy valiosos, ya que nos hacen recordar lo fundamental que es gozar de la compañía de aquellos a quienes más queremos."
+      },
+      {
+        "img": "/images/motorcycle.webp",
+        "audio": "/sounds/motorcycle.mp3",
+        "text": "Me encanta viajar en moto, recorrer nuevos lugares. Porque cada viaje es una oportunidad para descubrir paisajes, culturas y formas de pensar que me enriquecen y me ayudan a crecer."
+      },
+      {
+        "img": "/images/group.webp",
+        "audio": "/sounds/group.mp3",
+        "text": "Me gusta jugar microfútbol con amigos, no en torneos, sino como un espacio para compartir, reír y desconectarme. También practico taekwondo, camino o corro con frecuencia, porque me gusta mantenerme activo y sentir la energía del movimiento."
+      },
+      {
+        "img": "/images/paragliding.webp",
+        "audio": "/sounds/paragliding.mp3",
+        "text": "Las montañas y los deportes extremos me apasionan, porque ahí encuentro tanto paz como adrenalina. Me gusta sentir ese impulso de libertad y desafío que me recuerda que la vida también está hecha para atreverse."
+      },
+      {
+        "img": "/images/Bible.webp",
+        "audio": "/sounds/bible.mp3",
+        "text": "Me gusta leer la Biblia, conversar y compartir con personas que me inspiran. Disfruto estar activo y ayudar a los demás, porque creo que crecer como persona es un camino que se construye con humildad y sabiendo escuchar."
+      }
+    ]
+  },
+  "technologies": {
+    "title": "Tecnologías y Herramientas",
+    "quote": "“Cada lenguaje, una técnica que perfecciono cada día.”",
+    "video": "/videos/stellar-wolf.mp4",
+    "list": [
+      { "name": "Angular", "icon": "SiAngular", "color": "#dd0031" },
+      { "name": "Tailwind", "icon": "SiTailwindcss", "color": "#38bdf8" },
+      { "name": "Next.js", "icon": "SiNextdotjs", "color": "#000000" },
+      { "name": "Django", "icon": "SiDjango", "color": "#092e20" },
+      { "name": "Python", "icon": "SiPython", "color": "#3776AB" },
+      { "name": "MySQL", "icon": "SiMysql", "color": "#00758f" },
+      { "name": "Java", "icon": "FaJava", "color": "#f89820" },
+      { "name": "C#", "icon": "SiSharp", "color": "#9b4f96" },
+      { "name": "Unity", "icon": "SiUnity", "color": "#000000" },
+      { "name": "Spring Boot", "icon": "SiSpringboot", "color": "#6DB33F" },
+      { "name": "GitHub", "icon": "FaGithub", "color": "#181717" }
+    ]
+  },
+  "projects": [
+    {
+      "image": "/images/fermentation.webp",
+      "title": "Fermentation Monitoring",
+      "description": "El Sistema de Monitoreo de Fermentación en el Café es una aplicación diseñada para seguir en tiempo real los parámetros críticos del proceso de fermentación del café, como la temperatura, el pH y la humedad.",
+      "tools": ["TypeScript", "HTML", "CSS", "Angular", "Node.js"],
+      "gitUrl": "https://github.com/solartedaniers/software-Patrones.git"
+    },
+    {
+      "image": "/images/fermentation.webp",
+      "title": "Coca-Cola Company",
+      "description": "Programa que calcula los días de vacaciones según puesto y antigüedad.",
+      "tools": ["Java"],
+      "gitUrl": "https://github.com/solartedaniers/Coca-cola.git"
+    },
+    {
+      "image": "/images/fermentation.webp",
+      "title": "PlantSim",
+      "description": "PlantSim modela el crecimiento de plantas en función de variables ambientales.",
+      "tools": ["HTML", "Java", "SCSS", "TypeScript", "Spring Boot", "Angular", "Node.js"],
+      "gitUrl": "https://github.com/Pipemora1324/BigProyect.git"
+    },
+    {
+      "image": "/images/interface.webp",
+      "title": "Interface",
+      "description": "Interfaz hecha en Next.js usando Flex y Grid para un diseño moderno.",
+      "tools": ["TypeScript", "JavaScript", "CSS", "Next.js", "Tailwind"],
+      "gitUrl": "https://github.com/solartedaniers/interface.git"
+    },
+    {
+      "image": "/images/fermentation.webp",
+      "title": "Fermentation Monitoring",
+      "description": "El Sistema de Monitoreo de Fermentación en el Café es una aplicación diseñada para seguir en tiempo real los parámetros críticos del proceso de fermentación del café.",
+      "tools": ["TypeScript", "HTML", "CSS", "Angular", "Node.js"],
+      "gitUrl": "https://github.com/solartedaniers/software-Patrones.git"
+    },
+    {
+      "image": "/images/fermentation.webp",
+      "title": "Fermentation Monitoring",
+      "description": "Repetición intencional para pruebas futuras.",
+      "tools": ["TypeScript", "HTML", "CSS", "Angular", "Node.js"],
+      "gitUrl": "https://github.com/solartedaniers/software-Patrones.git"
+    }
+  ],
+  "testimonials": {
+    "title": "Testimonios",
+    "list": [
+      {
+        "name": "Danier Fernando",
+        "text": "Trabajar con Daniers Solarte ha sido una experiencia inspiradora. Su pasión por la tecnología, su compromiso con la calidad y su capacidad para convertir ideas en soluciones innovadoras lo convierten en un profesional excepcional.",
+        "image": "/images/Daniel.webp"
+      },
+      {
+        "name": "David Fernando Ramírez de la Parra",
+        "text": "Durante el tiempo que he compartido con Daniers en la carrera de Ingeniería de Software, he podido notar que es una persona muy responsable, dedicada y comprometida con todo lo que hace. Siempre demuestra un gran interés por aprender y mejorar, y su disciplina es evidente en cada trabajo o proyecto que realiza. Considero que esas cualidades, junto con su constancia y actitud positiva, son las que lo llevarán a lograr grandes cosas en su futuro profesional.",
+        "image": "/images/Ramirez.webp"
+      },
+      {
+        "name": "Roiman Andres Romo Limas",
+        "text": "Hace más de dos años, siendo aún adolescente, Daniers Solarte me ayudó a completar una tarea agrícola, sin importar que la noche hubiera caído mucho después de su horario laboral. Ese gesto refleja su entrega, generosidad y compromiso.Daniers se ha caracterizado siempre por su humildad, respeto hacia los demás y por llevar a Dios en su corazón. Su honestidad y valores personales y respeto a las Personas lo convierten en alguien confiable y admirable. Posee una gran habilidad para manejar herramientas agrícolas y mecánicas, lo que le ha permitido perseguir sus sueños con plena confianza. En cualquier campo en el que trabaje, lo hace con agilidad, entusiasmo y dedicación, dando siempre lo mejor de sí mismo.",
+        "image": "/images/Andres.webp"
+      },
+      {
+        "name": "Danier Fernando",
+        "text": "Otro testimonio repetido para pruebas futuras.",
+        "image": "/images/Daniel.webp"
+      }
+    ]
+  },
+  "contact": {
+    "background": "/images/village.webp",
+    "title": "Contacto",
+    "message": "“Si quieres construir algo increíble, no dudes en escribirme.<br />Siempre estoy dispuesto a aprender y aportar,<br />así que escríbeme y demos el primer paso.”",
+    "profile": { "default": "/images/profile1.webp", "hover": "/images/profile2.webp" },
+    "social": {
+      "linkedin": { "url": "https://www.linkedin.com/in/daniers-solarte-08716b381", "label": "LinkedIn" },
+      "whatsapp": { "url": "https://wa.me/3167969206", "label": "WhatsApp" }
+    },
+    "fields": {
+      "email": { "label": "Email*", "placeholder": "Ejemplo@gmail.com" },
+      "name": { "label": "Nombre*", "placeholder": "Xavier" },
+      "content": { "label": "Contenido*", "placeholder": "Escriba aquí el motivo de su mensaje" },
+      "send": "Enviar"
+    },
+    "errors": {
+      "email": "Introduzca un correo válido.",
+      "nombre": "Solo se aceptan letras. Debe contener al menos 3 caracteres.",
+      "onlyLetters": "Solo se aceptan letras, no números.",
+      "contenido": "Este espacio es obligatorio."
+    },
+    "success": "✅ Su mensaje fue enviado exitosamente.",
+    "error": "❌ Su mensaje no se pudo mandar. Inténtelo nuevamente."
+  },
+  "cv": {
+    "background": "/images/background.webp",
+    "video": "/videos/parchment.mp4",
+    "title": "CV",
+    "pdf": "/docs/Cv Spanish.pdf",
+    "translations": {
+      "view": "Ver CV",
+      "close": "Cerrar CV",
+      "download": "Descargar CV en PDF"
+    }
+  },
+  "experiencia": {
+    "title": "Experiencia Académica y Laboral",
+    "academic": "Experiencia Académica",
+    "academicText": "Soy estudiante de Ingeniería de Software en la Universidad Cooperativa de Colombia, Campus Pasto (actualmente cursando 5° semestre). Participación en el Primer Seminario Nacional de Ingeniería de Software.",
+    "academicProjects": "Desarrollo de proyectos académicos:",
+    "academicList": [
+      "Simulador de crecimiento de plantas.",
+      "Sistema de monitoreo de café.",
+      "Aplicación para el cálculo de vacaciones de trabajadores según departamento y antigüedad.",
+      "Diseño y desarrollo de interfaces enfocadas en usabilidad y experiencia de usuario."
+    ],
+    "work": "Experiencia Laboral",
+    "workText": "He trabajado como cocinero, repartidor, vendedor y apoyo técnico. Cada experiencia me ha enseñado disciplina, trabajo en equipo y compromiso.",
+    "workList": [
+      "Cocinero de comidas rápidas – Restaurante DMaíz.",
+      "Repartidor de frutas en carro – Frutas Gómez.",
+      "Vendedor en tienda – Panadería Lima Pan.",
+      "Apoyo en instalación de postes y cuerdas de luz."
+    ]
+  },
+  "filosofia": {
+    "title": "Mi Filosofía de Vida",
+    "text": [
+      "Mi filosofía de vida se basa en tres pilares: la fe en Dios, el amor por mi familia y la convicción de que cada reto es una oportunidad para crecer.",
+      "Creo que la disciplina y la constancia son el camino para alcanzar las metas, mientras que el aprendizaje continuo nos permite fortalecernos y evolucionar.",
+      "Vivir plenamente significa disfrutar cada momento —reír, llorar, soñar— entendiendo que cada experiencia forma nuestro carácter.",
+      "Busco ayudar a los demás y aportar valor, porque la verdadera grandeza no está en lo que logramos, sino en mantener intactos los principios que nos definen."
+    ],
+    "image": "/images/samurai-tiger.webp",
+    "background": "/images/path.webp"
+  },
+  "footer": {
+    "title": "Pie de página",
+    "credits": "© 2026 Damiers Alexander Solarte Limas - Ingeniero de Software",
+    "rights": "Todos los derechos reservados",
+    "phrase": "“La verdadera grandeza está en crecer sin perder los principios que nos definen.”",
+    "author": "Portafolio creado con pasión por Damiers Solarte – 2025",
+    "backgroundLeft": "/images/wolf.webp",
+    "backgroundRight": "/images/samurai.webp",
+    "social": {
+      "linkedin": { "label": "LinkedIn", 
+        "url": "https://www.linkedin.com/in/damiers-solarte-08716b381", 
+        "sound": "LinkedIn.mp3" },
+      "whatsapp": { "label": "WhatsApp", 
+        "url": "https://wa.me/573167969206", 
+        "sound": "whatsapp.mp3" },
+      "github": { "label": "GitHub", 
+        "url": "https://github.com/solartedaniers", 
+        "sound": "url.mp3" }
+    }
+  }
+}
